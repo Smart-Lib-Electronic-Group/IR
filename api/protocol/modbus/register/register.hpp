@@ -72,7 +72,7 @@ protected:
 
   bool is_valid(const uint16_t pos, const uint16_t length = 0) const
   {
-    return pos + length < m_size;
+    return pos + length <= m_size;
   }
 
 public:

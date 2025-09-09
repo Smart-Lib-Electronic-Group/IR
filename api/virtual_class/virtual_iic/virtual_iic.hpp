@@ -537,6 +537,8 @@ protected:
     m_delay_time = delay_time;
   }
 
+  using OwO::system::IOPort::open;
+
 public:
   explicit VIIC(const std::string& name = "VIIC", Object* parent = nullptr) : OwO::system::IOPort(name, parent)
   {

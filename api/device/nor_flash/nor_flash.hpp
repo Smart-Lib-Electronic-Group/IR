@@ -34,6 +34,8 @@ private:
   /// @brief W25Q256 对象
   driver::W25Q256* m_flash;
 
+  using system::ORom::open;
+
 public:
   /**
    * @brief NOR Flash 构造函数

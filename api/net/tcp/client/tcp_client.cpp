@@ -39,7 +39,7 @@ bool Tcp_Client::open(Socket_t client_socket, freertos_sockaddr* sockaddr, const
   if (false == IOStream::open(istream_size, ostream_size))
     return false;
 
-  if (client_socket < 0)
+  if (nullptr == client_socket)
   {
     close();
     return false;

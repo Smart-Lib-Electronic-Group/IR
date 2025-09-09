@@ -370,6 +370,8 @@ protected:
     }
   }
 
+  using virtual_class::VGpio::open;
+
 public:
   Key(const std::string& name = "Key", Object* parent = nullptr) : VGpio(name, parent)
   {

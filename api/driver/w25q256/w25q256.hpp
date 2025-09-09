@@ -426,6 +426,7 @@ protected:
 
   using IOPort::recv;
   using IOPort::send;
+  using IOPort::open;
 
 public:
   explicit W25Q256(const std::string& name = "IOPort", Object* parent = nullptr) : system::IOPort(name, parent)

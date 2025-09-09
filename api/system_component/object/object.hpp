@@ -5,6 +5,7 @@
 #include <vector>
 #include <string>
 #include <cstring>
+#include <typeinfo>
 
 #include "mutex.hpp"
 #include "atomic.hpp"

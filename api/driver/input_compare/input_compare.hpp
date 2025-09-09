@@ -21,6 +21,8 @@ private:
 protected:
   virtual void timer_task() override {}
 
+  using virtual_class::VTimer::open;
+
 public:
   explicit Input_Compare(const std::string& name = "input_compare", Object* parent = nullptr) : virtual_class::VTimer(name, parent)
   {

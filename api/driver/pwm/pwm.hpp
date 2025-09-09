@@ -23,6 +23,8 @@ private:
 protected:
   virtual void timer_task() override {}
 
+  using virtual_class::VTimer::open;
+
 public:
   explicit Pwm(const std::string& name, Object* parent = nullptr) : virtual_class::VTimer(name, parent)
   {

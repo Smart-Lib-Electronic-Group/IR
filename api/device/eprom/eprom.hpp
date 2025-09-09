@@ -55,6 +55,8 @@ private:
   /// @brief EPROM 芯片类型
   eprom_type_e         m_type;
 
+  using system::ORom::open;
+
 public:
   /**
    * @brief EPROM 构造函数

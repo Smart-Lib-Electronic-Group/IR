@@ -20,6 +20,8 @@ class Relay : public virtual_class::VGpio
 private:
   virtual void irq_callback() {}
 
+  using virtual_class::VGpio::open;
+
 public:
   Relay(const std::string& name = "Relay", Object* parent = nullptr) : VGpio(name, parent) {}
 
