@@ -1,0 +1,674 @@
+{
+  "name": "IR",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "api",
+    "app",
+    "core",
+    "port"
+  ],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "lib",
+        "files": [],
+        "folders": [
+          {
+            "name": "freertos",
+            "files": [],
+            "folders": [
+              {
+                "name": "head",
+                "files": [
+                  {
+                    "path": "lib/FreeRTOS/head/heap_4.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "port",
+                "files": [
+                  {
+                    "path": "lib/FreeRTOS/port/port.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "src",
+                "files": [
+                  {
+                    "path": "lib/FreeRTOS/src/croutine.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/event_groups.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/list.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/queue.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/stream_buffer.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/tasks.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS/src/timers.c"
+                  }
+                ],
+                "folders": []
+              }
+            ]
+          },
+          {
+            "name": "freertos_tcp",
+            "files": [],
+            "folders": [
+              {
+                "name": "src",
+                "files": [
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_ARP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_BitConfig.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DHCP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DHCPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DNS.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DNS_Cache.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DNS_Callback.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DNS_Networking.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_DNS_Parser.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_ICMP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IP_Timers.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IP_Utils.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv4_Sockets.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv4_Utils.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv6_Sockets.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_IPv6_Utils.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_ND.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_RA.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_Routing.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_Sockets.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_Stream_Buffer.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_IP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_IP_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_IP_IPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Reception.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_State_Handling.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_State_Handling_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_State_Handling_IPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Transmission.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Transmission_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Transmission_IPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Utils.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Utils_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_Utils_IPv6.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_TCP_WIN.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_Tiny_TCP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_UDP_IP.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_UDP_IPv4.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/src/FreeRTOS_UDP_IPv6.c"
+                  }
+                ],
+                "folders": []
+              },
+              {
+                "name": "port",
+                "files": [
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/port/BufferManagement/BufferAllocation_1.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/port/NetworkInterface/NetworkInterface.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/port/NetworkInterface/phyHandling.c"
+                  },
+                  {
+                    "path": "lib/FreeRTOS-Plus-TCP/port/NetworkInterface/stm32f4xx_hal_eth.c"
+                  }
+                ],
+                "folders": []
+              }
+            ]
+          },
+          {
+            "name": "hal",
+            "files": [
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_cortex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_crc.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_dma.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_dma_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_exti.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_flash.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_flash_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_gpio.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_i2c.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_i2c_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_iwdg.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_rcc.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_rtc.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_rtc_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_spi.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_tim.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_tim_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_uart.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_pwr_ex.c"
+              },
+              {
+                "path": "lib/HAL/Src/stm32f4xx_hal_pwr.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "u8g2",
+            "files": [
+              {
+                "path": "lib/U8g2/src/u8g2_arc.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_bitmap.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_box.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_buffer.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_button.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_circle.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_cleardisplay.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_d_memory.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_d_setup.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_font.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_fonts.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_hvline.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_input_value.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_intersection.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_kerning.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_line.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_ll_hvline.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_message.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_polygon.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_selection_list.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8g2_setup.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8log.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8log_u8g2.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8log_u8x8.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_8x8.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_byte.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_cad.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_capture.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_d_ssd1306_128x64_noname.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_debounce.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_display.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_fonts.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_gpio.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_input_value.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_message.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_selection_list.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_setup.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_string.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_u8toa.c"
+              },
+              {
+                "path": "lib/U8g2/src/u8x8_u16toa.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "tracerecorder",
+            "files": [
+              {
+                "path": "lib/TraceRecorder/src/SEGGER_RTT.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcAssert.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcCounter.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcDependency.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcDiagnostics.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcEntryTable.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcError.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcEvent.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcEventBuffer.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcExtension.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcHardwarePort.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcHeap.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcInternalEventBuffer.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcInterval.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcISR.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcKernelPort.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcMultiCoreEventBuffer.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcObject.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcPrint.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcRunnable.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcSnapshotRecorder.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcStackMonitor.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcStateMachine.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcStaticBuffer.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcStreamingRecorder.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcStreamPort.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcString.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcTask.c"
+              },
+              {
+                "path": "lib/TraceRecorder/src/trcTimestamp.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "09496947eb9e9bf68435a863135d053e"
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        "<virtual_root>/lib/tracerecorder",
+        "port/graphics",
+        "<virtual_root>/lib/u8g2"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M4",
+        "floatingPointHardware": "single",
+        "scatterFilePath": "./core/STM32F429IGTx_FLASH.ld",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [],
+          "ROM": []
+        },
+        "options": "null",
+        "archExtensions": ""
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "${ExecutableName}.bin",
+        "baseAddr": "0x8040000",
+        "cpuInfo": {
+          "vendor": "ST",
+          "cpuName": "STM32F429IG"
+        },
+        "proType": 1,
+        "speed": 4000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "api/virtual_class/virtual_gpio",
+          "api/virtual_class/virtual_timer",
+          "api/virtual_class/virtual_uart",
+          "api/system_component/kernel/atomic",
+          "api/system_component/kernel/event_flags",
+          "api/system_component/kernel/message_queue",
+          "api/system_component/kernel/mutex",
+          "api/system_component/kernel/semaphore",
+          "api/system_component/kernel/thread",
+          "api/system_component/iostream",
+          "api/system_component/object",
+          "api/system_component/obuf",
+          "api/system_component/ostring",
+          "api/system_component/signal",
+          "api/driver/rs485",
+          "api/algorithm/filter/kalman",
+          "app/error",
+          "app/start",
+          "config",
+          "core/inc",
+          "lib/FreeRTOS/inc",
+          "lib/FreeRTOS/port",
+          "lib/HAL/Inc",
+          "lib/TraceRecorder/inc",
+          "lib/U8g2/inc",
+          "lib/FreeRTOS-Plus-TCP/inc",
+          "lib/FreeRTOS-Plus-TCP/port/Compiler",
+          "lib/FreeRTOS-Plus-TCP/port/NetworkInterface",
+          "port/graphics/u8g2",
+          "port/kernel/freertos",
+          "port/hardware/hal/port_dma",
+          "port/hardware/hal/port_eth",
+          "port/hardware/hal/port_gpio",
+          "port/hardware/hal/port_iwdg",
+          "port/hardware/hal/port_tim",
+          "port/hardware/hal/port_uart",
+          "port/hardware/hal",
+          "port/hardware/hal/port_system",
+          "port/hardware/hal/port_spi",
+          "api/protocol/modbus/modbus_slave",
+          "port/network/freertos_tcp",
+          "api/net/tcp/client",
+          "api/net/tcp/server",
+          "api/virtual_class/virtual_iic",
+          "api/virtual_class/virtual_spi",
+          "api/driver/clock",
+          "api/driver/input_compare",
+          "api/driver/pwm",
+          "api/device/key",
+          "api/device/led",
+          "api/device/relay",
+          "api/device/delixi_meter",
+          "api/driver/zam6218a",
+          "api/protocol/modbus/register",
+          "api/system_component/ioport",
+          "api/system_component/orom",
+          "api/protocol/modbus/modbus_master",
+          "api/device/ir",
+          "api/protocol/modbus/modbus_server",
+          "app/main",
+          "app/rom",
+          "app/app",
+          "api/driver/tca9535",
+          "api/protocol/modbus/coil",
+          "api/device/nor_flash",
+          "api/driver/tca9548a",
+          "api/driver/w25q256",
+          "api/device/eprom"
+        ],
+        "libList": [],
+        "defineList": [
+          "STM32F429xx",
+          "STM32F429",
+          "USE_HAL_DRIVER",
+          "STM32F4"
+        ]
+      },
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "hard",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs"
+          },
+          "c/cpp-compiler": {
+            "language-c": "c17",
+            "language-cpp": "c++17",
+            "optimization": "level-3",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "turn-Warning-into-errors": true,
+            "signed-char": true,
+            "no-exceptions": true,
+            "no-threadsafe-statics": true
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LIB_FLAGS": "-lm",
+            "$toolName": "auto"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.6"
+}
